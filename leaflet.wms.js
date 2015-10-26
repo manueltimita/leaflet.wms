@@ -54,6 +54,7 @@ wms.Source = L.Layer.extend({
             }
         }
         if (tiled) {
+            overlayOptions.tiled = true;
             return wms.tileLayer(this._url, overlayOptions);
         } else {
             return wms.overlay(this._url, overlayOptions);
